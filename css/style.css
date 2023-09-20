@@ -55,8 +55,14 @@ h1 {
 }
 
 h2 {
-
+    font-family: var(--section-title-font);
+    font-style: normal;
+    font-weight: var(--section-title-weight);
+    font-size: var(--section-title-size);
+    line-height: var(--section-title-height);
+    color: var(--main-text-color);
 }
+
 h3 {
 
 }
@@ -87,7 +93,6 @@ a {
 
 .section-title {
     margin: 0;
-    font-size: 22px;
 }
 
 .card {
