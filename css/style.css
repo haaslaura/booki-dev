@@ -18,9 +18,9 @@ h1, h2, h3, h4, h5, p, a, ul, ol {
 }
 
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+    --main-color: #0065FC; /* Blue */
+    --main-bg-color: #F2F2F2; /* Grey */
+    --filter-bg-color: #DEEBFF; /* Light blue */
 }
 
 .fa-solid {
