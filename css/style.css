@@ -1,15 +1,46 @@
 /****** Header ***********/
 .main-header {
-    display: flexbox;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo-booki {
-
+    height: 1.19rem;
+    max-height: 1.19rem;
+    margin: 30px 50px 30px 50px;
 }
 
 .main-navigation {
+}
 
+.navigation-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 4.25rem;
+    list-style: none;
+    margin-top: 0;
+    height: 35px;
+}
+
+.navigation-menu a li {
+    border-top: 2px solid transparent;
+    padding-top: 1.06rem;
+}
+
+.navigation-menu a:hover li {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+}
+
+.navigation-menu li a:focus {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+}
+
+.navigation-menu li a:visited {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 /****** General ***********/
@@ -43,52 +74,59 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
-h1 {
-    font-family: var(--section-title-font);
+h1, h2, h3, h4, p, ul, ol {
     font-style: normal;
+}
+
+h1, h2, h4 {
+    font-family: var(--section-title-font);
     font-weight: var(--section-title-weight);
-    font-size: var(--section-title-size);
-    line-height: var(--section-title-height);
     color: var(--main-text-color);
 }
 
-h2 {
-    font-family: var(--section-title-font);
-    font-style: normal;
-    font-weight: var(--section-title-weight);
+h1, h2 {
     font-size: var(--section-title-size);
     line-height: var(--section-title-height);
-    color: var(--main-text-color);
 }
 
 h3 {
-
+    font-family: var(--card-title-font);
+    font-weight: var(--card-title-weight);
+    font-size: var(--card-title-size);
+    line-height: var(--card-title-height);
+    color: var(--main-text-color);
 }
-h4 {}
-p {}
-a {}
-ul {}
 
+h4 {
+    font-size: 1.12rem;
+    line-height: 1.32rem;
+}
 
+p, ul, ol {
+    font-family: var(--information-font);
+    font-weight: var(--information-weight);
+    font-size: var(--information-size);
+    line-height: var(--information-height);
+    color: var(--main-text-color);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 .fa-solid {
     color: var(--main-color);
 }
-
-
 
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
 }
 
 .section-title {
