@@ -13,24 +13,65 @@
 }
 
 /****** General ***********/
-h1, h2, h3, h4, h5, p, a, ul, ol {
-    font-family: 'Raleway', sans-serif;
-}
 
 :root {
+    /* Colors */
     --main-color: #0065FC; /* Blue */
-    --main-bg-color: #F2F2F2; /* Grey */
     --filter-bg-color: #DEEBFF; /* Light blue */
-}
+    --main-bg-color: #F2F2F2; /* Grey */
+    --second-bg-color: #D9D9D9; /* Light grey */
+    --main-text-color: black;
 
-.fa-solid {
-    color: var(--main-color);
+    /* Text configuration */
+    --card-title-font: 'Raleway', sans-serif;
+    --section-title-font: 'Raleway', sans-serif;
+    --information-font: 'Raleway', sans-serif;
+
+    --card-title-weight: 700;
+    --section-title-weight: 700;
+    --information-weight: 400;
+
+    --card-title-size: 1rem;
+    --section-title-size: 1.37rem;
+    --information-size: 1rem;
+
+    --card-title-height: 1.17rem;
+    --section-title-height: 1.61rem;
+    --information-height: 1.17rem;
 }
 
 body {
     display: flex;
     justify-content: center;
 }
+
+h1 {
+    font-family: var(--section-title-font);
+    font-style: normal;
+    font-weight: var(--section-title-weight);
+    font-size: var(--section-title-size);
+    line-height: var(--section-title-height);
+    color: var(--main-text-color);
+}
+
+h2 {
+
+}
+h3 {
+
+}
+h4 {}
+p {}
+a {}
+ul {}
+
+
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+
 
 .main-container {
     width: 100%;
