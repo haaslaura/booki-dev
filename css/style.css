@@ -1,90 +1,83 @@
-/****** Header ***********/
-.main-header {
+/*************************/
+/*** SEARCH CONTAINER ****/
+/*************************/
+
+.search-form {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 23.56rem;
+    margin-top: 1.87rem;
 }
 
-.logo-booki {
-    height: 1.19rem;
-    max-height: 1.19rem;
-    margin: 30px 50px 30px 50px;
-}
-
-.navigation-menu {
+.icon-location-spot {
+    background-color: var(--main-bg-color);
+    border-radius: 15px 0px 0px 15px;
     display: flex;
-    flex-direction: row;
-    gap: 4.25rem;
-    list-style: none;
-    margin-top: 0;
-    height: 35px;
-    padding-left: 0;
+    /*width: 3.12rem;*/
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.3rem 1rem 1.3rem;
 }
 
-.navigation-menu a li {
-    border-top: 2px solid transparent;
-    padding-top: 1.06rem;
+i.fa-solid.fa-location-dot {
+    color: var(--main-text-color);
 }
 
-.navigation-menu a:hover li {
-    color: var(--main-color);
-    border-top: 2px solid var(--main-color);
+.input-style {
+    outline: none;
+    border: 1px solid var(--main-bg-color);
+    font-family: var(--section-title-font);
+    font-size: 1.12rem;
+    font-weight: 700;
+    line-height: 1.32rem;
 }
 
-.navigation-menu li a:focus {
-    color: var(--main-color);
-    border-top: 2px solid var(--main-color);
+#place-input {
+    text-align: center;
 }
 
-.navigation-menu li a:visited {
-    color: var(--main-color);
-    border-top: 2px solid var(--main-color);
+#place-input:focus {
+    border: 1px solid var(--second-bg-color);
 }
 
-/* Header small devices */
+.main-button {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+#text-search-button {
+    font-family: var(--section-title-font);
+    font-size: 1.12rem;
+    font-weight: 700;
+    line-height: 1.32rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+
+#icon-search-button {
+    visibility: hidden;
+}
+
+/* Tablett and small devices */
 @media screen and (max-width: 768px) {
-    .main-header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .search-container {
+        padding: 0rem 1.25rem 0rem 1.25rem;
     }
     
-    .logo-booki {
-        margin: 1.87rem;
+    #text-search-button {
+        visibility: hidden;
     }
-    
-    .navigation-menu {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .navigation-menu a li {
-        border-top-width: 0px;
-        border-bottom: 2px solid transparent;
-        padding: 0 0 1rem 0;
-    }
-    
-    .navigation-menu a:hover li {
-        border-top-width: 0px;
-        border-bottom: 2px solid var(--main-color);
-    }
-    
-    .navigation-menu li a:focus {
-        border-top-width: 0px;
-        border-bottom: 2px solid var(--main-color);
-    }
-    
-    .navigation-menu li a:visited {
-        border-top-width: 0px;
-        border-bottom: 2px solid var(--main-color);
+    #icon-search-button {
+        display: visible;
     }
 }
 
-/****** General ***********/
-
+/*************************/
+/****** GENERAL **********/
+/*************************/
 :root {
     /* Colors */
     --main-color: #0065FC; /* Blue */
@@ -169,6 +162,14 @@ a {
     box-sizing: border-box;
 }
 
+/* Tablett and small devices */
+@media screen and (max-width: 768px) {
+    .main-container {
+        max-width: 768px;
+        padding: 0;
+    }
+}
+
 .section-title {
     margin: 0;
 }
@@ -194,6 +195,93 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/*************************/
+/******** HEADER *********/
+/*************************/
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-booki {
+    height: 1.19rem;
+    max-height: 1.19rem;
+    margin: 30px 50px 30px 50px;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 4.25rem;
+    list-style: none;
+    margin-top: 0;
+    height: 35px;
+    padding-left: 0;
+}
+
+.navigation-menu a li {
+    border-top: 2px solid transparent;
+    padding-top: 1.06rem;
+}
+
+.navigation-menu a:hover li {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+}
+
+.navigation-menu li a:focus {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+}
+
+.navigation-menu li a:visited {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+}
+
+/* Header small devices */
+@media screen and (max-width: 768px) {
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .logo-booki {
+        margin: 1.87rem;
+    }
+    
+    .navigation-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .navigation-menu a li {
+        border-top-width: 0px;
+        border-bottom: 2px solid transparent;
+        padding: 0 0 1rem 0;
+    }
+    
+    .navigation-menu a:hover li {
+        border-top-width: 0px;
+        border-bottom: 2px solid var(--main-color);
+    }
+    
+    .navigation-menu li a:focus {
+        border-top-width: 0px;
+        border-bottom: 2px solid var(--main-color);
+    }
+    
+    .navigation-menu li a:visited {
+        border-top-width: 0px;
+        border-bottom: 2px solid var(--main-color);
+    }
 }
 
 /****** Hebergements And Populaires ***********/

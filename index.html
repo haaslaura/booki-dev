@@ -36,10 +36,18 @@
                 <p>En plein centre-ville ou en pleine nature</p>
 
                 <!-- Fonction de recherche : champs de saisie, il faut englober ce champs dans un formulaire -->
-                <form></form>
+                <form class="search-form" method="" action="">
+                    <div class="icon-location-spot">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <input type="search" name="place" class="input-style" id="place-input" placeholder="Entrez votre recherche">
+                    <button class="main-button" id="text-search-button">Rechercher</button>
+                    <button class="main-button" id="icon-search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
                 <div class="search-filters">
                     <p class="filters-title"></p>
                     <div class="filters">
+                        <p>Filtres</p>
                         <ul>
                             <li>Économique</li>
                             <li>Familial</li>
