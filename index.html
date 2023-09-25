@@ -35,7 +35,8 @@
                 <h1 class="search-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
 
-                <!-- Fonction de recherche : champs de saisie, il faut englober ce champs dans un formulaire -->
+                <!-- Champ englobé dans un formulaire : partie Recherche non fonctionnelle,
+                    c'est une première version pour valider l’interface -->
                 <form class="search-form" method="" action="">
                     <div class="icon-location-spot">
                         <i class="fa-solid fa-location-dot"></i>
@@ -45,19 +46,16 @@
                     <button class="main-button" id="icon-search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div class="search-filters">
-                    <p class="filters-title"></p>
-                    <div class="filters">
-                        <p>Filtres</p>
-                        <ul>
-                            <li>Économique</li>
-                            <li>Familial</li>
-                            <li>Romantique</li>
-                            <li>Nos pépites</li>
-                        </ul>
-                    </div>
+                    <p class="filters-title">Filtres</p>
+                    <ul class="filters">
+                        <a href="#"><li class="filter" id="eco-filter"><i class="fa-solid fa-money-bill-wave"></i> Économique</li></a>
+                        <a href="#"><li class="filter" id="familly-filter"><i class="fa-solid fa-person"></i> Familial</li></a>
+                        <a href="#"><li class="filter" id="romantic-filter"><i class="fa-solid fa-heart"></i> Romantique</li></a>
+                        <a href="#"><li class="filter" id="rare-filter"><i class="fa-solid fa-fire"></i> Nos pépites</li></a>
+                    </ul>
                 </div>
                 <div class="search-info">
-                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-info"></i>
                     <p>Plus de 500 logements disponibles dans cette ville.</p>
                 </div>
 
