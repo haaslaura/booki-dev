@@ -111,7 +111,7 @@ a {
     list-style: none;
     margin-top: 0;
     height: 35px;
-    padding-left: 0;
+    padding-left: 0px;
 }
 
 .navigation-menu li {
@@ -151,7 +151,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 1.3rem 1rem 1.3rem;
+    padding: 16px 20px;
 }
 
 i.fa-solid.fa-location-dot {
@@ -181,7 +181,7 @@ i.fa-solid.fa-location-dot {
     color: white;
     border: none;
     text-align: center;
-    padding: 1rem;
+    padding: 16px;
 }
 
 #text-search-button {
@@ -218,17 +218,17 @@ i.fa-solid.fa-location-dot {
     flex-wrap: nowrap;
     list-style: none;
     align-items: center ;
-    padding-left: 0;
-    gap: 1rem;
+    padding-left: 0px;
+    gap: 16px;
 }
 
 .filter {
     font-weight: var(--section-title-weight);
     font-size: 1.06rem;
-    padding: 1rem 0.9rem;
+    padding: 16px 14px;
     border: 2px solid var(--second-bg-color);
-    border-radius: 2rem;
-    gap: 0.63rem;
+    border-radius: 32px;
+    gap: 10px;
 }
 
 .filter:hover {
@@ -253,7 +253,7 @@ i.fa-solid.fa-info {
     font-size: 0.6rem;
     color: var(--main-color);
     background-color: white;
-    padding: 0.44rem 0.62rem 0.44rem 0.62rem;
+    padding: 7px 10px;
     border-radius: 50%;
     border: 1px solid var(--second-bg-color);
 }
@@ -277,10 +277,7 @@ i.fa-solid.fa-info {
 }
 
 .horizontal-card, .card {
-    background-color: white;
-    border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .horizontal-card img, .card img {
@@ -419,9 +416,6 @@ i.fa-solid.fa-info {
 }
 
 .long-card {
-    background-color: white;
-    border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     box-sizing: border-box;
 }
 
@@ -434,6 +428,20 @@ i.fa-solid.fa-info {
     height: 380px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
+}
+
+/********************************/
+/** HEGERGEMENTS & ACTIVITIES ***/
+/********************************/
+
+.horizontal-card, .card, .long-card {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.horizontal-card:hover, .card:hover, .long-card:hover {
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
 }
 
 /*************************/
@@ -457,7 +465,7 @@ footer {
 
 .footer-menu {
     list-style: none;
-    padding: 0;
+    padding: 0px;
     line-height: 1.8rem;
 }
 
@@ -516,7 +524,7 @@ footer {
     /* Global */
     .main-container {
         max-width: 768px;
-        padding: 0;
+        padding: 0px;
     }
     /* Header */
     .main-header {
@@ -561,7 +569,7 @@ footer {
         width: 100%;
     }
     .search-container {
-        padding: 0rem 1.25rem 0rem 1.25rem;
+        padding: 0px 20px;
     }
     
     #text-search-button {
