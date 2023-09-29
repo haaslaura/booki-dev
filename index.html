@@ -23,8 +23,8 @@
             <img class="logo-booki" src="images/logo/booki.svg" alt="Le logo de Booki présente le nom 'Booki' écrit en bleu roi, avec un 'o' stylisé qui évoque une serrure, symbolisant la sécurité et l'ouverture vers de nouvelles expériences.">
             <nav class="main-navigation">
                 <ul class="navigation-menu">
-                    <a href="#"><li>Hébergements</li></a><!-- FAQ Mauvaise pratique ?-->
-                    <a href="#"><li>Activités</li></a>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
                 </ul>
             </nav> 
         </header>
@@ -35,13 +35,12 @@
                 <h1 class="search-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
 
-                <!-- Champ englobé dans un formulaire : partie Recherche non fonctionnelle,
-                    c'est une première version pour valider l’interface -->
+                <!-- Research form not functional: first version to validate the interface -->
                 <form class="search-form" method="" action="">
                     <div class="icon-location-spot">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <input type="search" name="place" class="input-style" id="place-input" placeholder="Entrez votre recherche">
+                    <input type="search" name="place" class="input-style" id="place-input" placeholder="Marseille, France">
                     <button class="main-button" id="text-search-button">Rechercher</button>
                     <button class="main-button" id="icon-search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
@@ -63,8 +62,8 @@
             </section>
 
             <!-- Available and popular accommodation section -->
-            <div class="hebergements-and-populaires">
-                <section  class="hebergements">
+            <div class="hebergements-and-populaires" id="hebergements">
+                <section class="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
@@ -257,7 +256,7 @@
             </div>
 
             <!-- Activities section  -->
-            <section class="activities-container">
+            <section class="activities-container" id="activites">
                 <div class="activities-title">
                     <h2 class="section-title">Activités à Marseille</h2>
                 </div>
