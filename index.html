@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/3d631d5da7.js" crossorigin="anonymous"></script>
 </head>
@@ -20,14 +20,13 @@
     <div class="main-container">
 
         <header class="main-header">
-            <img class="logo-booki" src="images/logo/booki.svg" alt="Le logo de Booki présente le nom 'Booki' écrit en bleu roi, avec un 'o' stylisé qui évoque une serrure, symbolisant la sécurité et l'ouverture vers de nouvelles expériences."/>
+            <img class="logo-booki" src="images/logo/booki.svg" alt="Le logo de Booki présente le nom 'Booki' écrit en bleu roi, avec un 'o' stylisé qui évoque une serrure, symbolisant la sécurité et l'ouverture vers de nouvelles expériences.">
             <nav class="main-navigation">
-                <ul>
-                    <li>Hébergements</li>
-                    <li>Activités</li>
+                <ul class="navigation-menu">
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
                 </ul>
             </nav> 
-
         </header>
         
         <main>
@@ -36,32 +35,41 @@
                 <h1 class="search-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
 
-                <!-- Fonction de recherche : champs de saisie, il faut englober ce champs dans un formulaire -->
-                <form></form>
-                <div class="search-filters">
-                    <p class="filters-title"></p>
-                    <div class="filters">
-                        <ul>
-                            <li>Économique</li>
-                            <li>Familial</li>
-                            <li>Romantique</li>
-                            <li>Nos pépites</li>
-                        </ul>
+                <!-- Research form not functional: first version to validate the interface -->
+                <form class="search-form" method="" action="">
+                    <div class="icon-location-spot">
+                        <i class="fa-solid fa-location-dot"></i>
                     </div>
+                    <input
+                        type="search"
+                        name="place"
+                        class="input-style"
+                        id="place-input"
+                        placeholder="Entrez votre recherche"
+                        value="Marseille, France">
+                    <button type="button" class="main-button" id="text-search-button" title="Rechercher">Rechercher</button>
+                    <button type="button" class="main-button" id="icon-search-button" title="Rechercher"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="search-filters">
+                    <p class="filters-title">Filtres</p>
+                    <ul class="filters">
+                        <li class="filter" id="eco-filter"><a href="#"><i class="fa-solid fa-money-bill-wave"></i> Économique</a></li>
+                        <li class="filter" id="familly-filter"><a href="#"><i class="fa-solid fa-person"></i> Familial</a></li>
+                        <li class="filter" id="romantic-filter"><a href="#"><i class="fa-solid fa-heart"></i> Romantique</a></li>
+                        <li class="filter" id="rare-filter"><a href="#"><i class="fa-solid fa-fire"></i> Nos pépites</a></li>
+                    </ul>
                 </div>
                 <div class="search-info">
-                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-info"></i>
                     <p>Plus de 500 logements disponibles dans cette ville.</p>
                 </div>
-
-
             </section>
 
             <!-- Available and popular accommodation section -->
-            <div class="hebergements-and-populaires">
-                <section  class="hebergements">
+            <div class="hebergements-and-populaires" id="hebergements">
+                <section class="hebergements">
                     <div class="hebergements-title">
-                        <h2 class="section-title">Les plus populaires</h2>
+                        <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
                         <a href="#">
@@ -214,7 +222,7 @@
                                 <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
-                                        <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                                        <h3 class="card-title">Chambres d'hôtes Au cœur de l'eau</h3>
                                         <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
                                     </div>
                                     <div class="card-rating">
@@ -252,9 +260,9 @@
             </div>
 
             <!-- Activities section  -->
-            <section class="activities-container">
+            <section class="activities-container" id="activites">
                 <div class="activities-title">
-                    <h2 class="activities-title">Activités à Marseille</h2>
+                    <h2 class="section-title">Activités à Marseille</h2>
                 </div>
                 <div class="activities-card">
                     <a href="#">
@@ -297,41 +305,39 @@
                             </div>
                         </article>
                     </a>
-
+                </div>
             </section>
         </main>
         
         <footer>
-            <div class="section-footer" id="section-footer-1">
+            <div class="sections-footer">
                 <h4 class="footer-title">À propos</h4>
-                <nav class="nav-footer">
-                    <ul>
-                        <li>Fonctionnement du site</li>
-                        <li>Conditions générales</li>
-                        <li>Données et confidentialité</li>
+                <nav class="footer-nav">
+                    <ul class="footer-menu">
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="section-footer" id="section-footer-2">
+            <div class="sections-footer">
                 <h4 class="footer-title">Nos hébergements</h4>
-                <nav class="nav-footer">
-                    <ul>
-                        <li>Charte qualité</li>
-                        <li>Proposer votre hôtel</li>
+                <nav class="footer-nav">
+                    <ul class="footer-menu">
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Proposer votre hôtel</a></li>
                     </ul>
                 </nav>
-
             </div>
-            <div class="section-footer" id="section-footer-3">
+            <div class="sections-footer">
                 <h4 class="footer-title">Assistance</h4>
-                <nav class="nav-footer">
-                    <ul>
-                        <li>Centre d'aide</li>
-                        <li>Nous contacter</li>
+                <nav class="footer-nav">
+                    <ul class="footer-menu">
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
                     </ul>
                 </nav>
             </div>         
-
         </footer>
     </div>
 </body>
